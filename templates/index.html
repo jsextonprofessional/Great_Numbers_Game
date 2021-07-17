@@ -19,7 +19,7 @@
         <div class="feedback-box">
             {% if session['feedback'] == 'new_game' %}
             <h2>Take a Guess!</h2>
-            {% elif session['feedback'] == 'exact' %}
+            {% elif session['feedback'] == 'correct' %}
             <h2>{{session['user_input']}} was the correct number!</h2>
             {% elif session['feedback'] == 'hi' %}
             <h2>Too high!</h2>

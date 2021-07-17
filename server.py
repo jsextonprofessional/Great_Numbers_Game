@@ -8,7 +8,7 @@ app.secret_key = "yeeterskeeter"
 @app.route('/')
 def index():
     if 'rando_num' not in session:
-        session['rando_num'] = random.randint(1,3)
+        session['rando_num'] = random.randint(1,100)
         session['feedback'] = 'new_game'
     print(session['rando_num'])
     return render_template('index.html')
